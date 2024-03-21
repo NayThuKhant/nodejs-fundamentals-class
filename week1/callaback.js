@@ -3,7 +3,7 @@ const higherOrderFunction = (callback) => {
   callback('Helloworld')
   // Do Something
 
-  // Typicall in most of the definitions, higher order functions must return the incoming function
+  // Typically in most of the definitions, higher order functions must return the incoming function
 }
 
 const aNormalFunction = (value) => {
