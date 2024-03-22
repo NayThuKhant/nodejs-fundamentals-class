@@ -3,7 +3,7 @@ var varVariable = 'Var Variable'
   var varScopeVariable = 'Var Scope Variable'
   console.log(varVariable)
 }
-console.log(varScopeVariable)
+  console.log(varScopeVariable)
 
 let noneScopeVariable = 'Non Scope Variable'
 {
