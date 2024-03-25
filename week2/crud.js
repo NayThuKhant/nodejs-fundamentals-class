@@ -21,7 +21,6 @@ const server = http.createServer((req, res) => {
   const pathname = parsedURL.pathname
   const method = req.method
   const queryParams = querystring.parse(parsedURL.query)
-  console.log(queryParams)
 
   res.setHeader("Content-Type", "application/json")
 
@@ -47,7 +46,7 @@ const server = http.createServer((req, res) => {
             res.end()
           })
 
-        case "DELETE":
+        case "PUT":
           // extract id of book to delete, from req
           const id = queryParams.id
           // find book with given id and update it in array "books"
