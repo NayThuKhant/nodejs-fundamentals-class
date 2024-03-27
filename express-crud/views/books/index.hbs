@@ -1,0 +1,16 @@
+<div class="form">
+  <h1>Books</h1>
+  <ul>
+    {{#each books}}
+      <li class="list-item"><a href="/books/{{this.id}}">{{this.title}}
+          by
+          {{book._id}}
+          {{this.author}}</a>
+        <form action="/books/{{this.id}}?_method=DELETE" method="post">
+          <button type="submit">Delete</button>
+        </form></li>
+    {{/each}}
+  </ul>
+
+  <a href="/books/create" class="button">Create</a>
+</div>
